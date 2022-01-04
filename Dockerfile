@@ -1,5 +1,5 @@
 FROM openjdk:11
-WORKDIR /jarapp
-ADD ./target/*.jar /jarapp/
+#WORKDIR /jarapp
+ADD **/*.jar /jarapp/
 EXPOSE 7080
-CMD ["java", "-jar", "*.jar"]
+CMD ["java", "-jar", "/jarapp/*.jar"]
